@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C2BF91328A2E74800B14746 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2BF91228A2E74800B14746 /* ContentViewModel.swift */; };
 		7C41FD0228A19740003143DB /* ClauDFluxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C41FD0128A19740003143DB /* ClauDFluxApp.swift */; };
 		7C41FD0428A19740003143DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C41FD0328A19740003143DB /* ContentView.swift */; };
 		7C41FD0628A19744003143DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C41FD0528A19744003143DB /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 		7C41FD1328A19744003143DB /* ClauDFluxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C41FD1228A19744003143DB /* ClauDFluxTests.swift */; };
 		7C41FD1D28A19744003143DB /* ClauDFluxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C41FD1C28A19744003143DB /* ClauDFluxUITests.swift */; };
 		7C41FD1F28A19744003143DB /* ClauDFluxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C41FD1E28A19744003143DB /* ClauDFluxUITestsLaunchTests.swift */; };
+		7C41FD2F28A19A73003143DB /* MoneyNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C41FD2E28A19A73003143DB /* MoneyNumberView.swift */; };
+		7C41FD3128A19D2E003143DB /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C41FD3028A19D2E003143DB /* CellView.swift */; };
+		7C41FD3328A1A5F7003143DB /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C41FD3228A1A5F7003143DB /* Transaction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C2BF91228A2E74800B14746 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		7C41FCFE28A19740003143DB /* ClauDFlux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClauDFlux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C41FD0128A19740003143DB /* ClauDFluxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClauDFluxApp.swift; sourceTree = "<group>"; };
 		7C41FD0328A19740003143DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +49,9 @@
 		7C41FD1828A19744003143DB /* ClauDFluxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClauDFluxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C41FD1C28A19744003143DB /* ClauDFluxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClauDFluxUITests.swift; sourceTree = "<group>"; };
 		7C41FD1E28A19744003143DB /* ClauDFluxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClauDFluxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7C41FD2E28A19A73003143DB /* MoneyNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyNumberView.swift; sourceTree = "<group>"; };
+		7C41FD3028A19D2E003143DB /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		7C41FD3228A1A5F7003143DB /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				7C41FD0128A19740003143DB /* ClauDFluxApp.swift */,
-				7C41FD0328A19740003143DB /* ContentView.swift */,
 				7C41FD0528A19744003143DB /* Assets.xcassets */,
+				7C41FD2D28A197C7003143DB /* ViewModels */,
+				7C41FD2C28A197BE003143DB /* Views */,
+				7C41FD2B28A197AC003143DB /* Models */,
 				7C41FD0728A19744003143DB /* Preview Content */,
 			);
 			path = ClauDFlux;
@@ -125,6 +135,32 @@
 				7C41FD1E28A19744003143DB /* ClauDFluxUITestsLaunchTests.swift */,
 			);
 			path = ClauDFluxUITests;
+			sourceTree = "<group>";
+		};
+		7C41FD2B28A197AC003143DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C41FD3228A1A5F7003143DB /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C41FD2C28A197BE003143DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C41FD0328A19740003143DB /* ContentView.swift */,
+				7C41FD2E28A19A73003143DB /* MoneyNumberView.swift */,
+				7C41FD3028A19D2E003143DB /* CellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C41FD2D28A197C7003143DB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7C2BF91228A2E74800B14746 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C41FD3128A19D2E003143DB /* CellView.swift in Sources */,
+				7C41FD2F28A19A73003143DB /* MoneyNumberView.swift in Sources */,
+				7C2BF91328A2E74800B14746 /* ContentViewModel.swift in Sources */,
 				7C41FD0428A19740003143DB /* ContentView.swift in Sources */,
 				7C41FD0228A19740003143DB /* ClauDFluxApp.swift in Sources */,
+				7C41FD3328A1A5F7003143DB /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
